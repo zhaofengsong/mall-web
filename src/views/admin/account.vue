@@ -133,7 +133,7 @@
 
 <style scoped="scoped">
 	.el-card {
-		width: calc(100vw - 245px);
+		width: calc(100vw - 265px);
 		margin: 20px;
 	}
 

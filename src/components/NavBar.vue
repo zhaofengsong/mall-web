@@ -1,7 +1,7 @@
 <template>
 	<div class="NavBar clearfix">
 		<img style="height: 35px;margin: 5px 0 0 10px; float: left;" src="../assets/ia_100000001.png" alt="">
-		<p style="font-size: 15px; color: black; margin-left: 10px;float: left;">华为商城后台管理系统</p>
+		<p style="font-size: 15px; color: black; margin-left: 10px;float: left;">华为商城管理系统</p>
 	</div>
 </template>
 

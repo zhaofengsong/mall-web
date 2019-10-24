@@ -38,7 +38,7 @@
 				</el-table-column>
 			</el-table>
 			<!-- 编辑弹窗 -->
-			<el-dialog title="编辑分类" :visible.sync="editModalShow">
+			<el-dialog title="编辑分类" :visible.sync="editModalShow" :show-close = 'false'>
 				<el-form :model="editForm" :rules="rules">
 					<el-form-item label="账户" prop="fullname" label-width="60px">
 						<el-input v-model="editForm.fullname" autocomplete="off"></el-input>
@@ -175,9 +175,9 @@
 				}
 			},
 			closeEditModal() {
-				this.editModalShow = false;
 				this.editForm = {};
 				this.editImgFileList = [];
+				this.editModalShow = false;
 			},
 			deleteHandle(id) {
 				this.$confirm('此操作将永久删除该文件, 是否继续?', '提示', {

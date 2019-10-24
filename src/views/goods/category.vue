@@ -22,7 +22,7 @@
 			</el-tree>
 
 			<!-- 添加弹窗 -->
-			<el-dialog title="添加分类" :visible.sync="insertModalShow">
+			<el-dialog title="添加分类" :visible.sync="insertModalShow" :show-close = 'false'>
 				<el-form :model="insertForm" :rules="rules">
 					<el-form-item label="名称" label-width="60px" prop="name">
 						<el-input v-model="insertForm.name" autocomplete="off"></el-input>
@@ -44,7 +44,7 @@
 				</div>
 			</el-dialog>
 			<!-- 编辑弹窗 -->
-			<el-dialog title="编辑分类" :visible.sync="editModalShow">
+			<el-dialog title="编辑分类" :visible.sync="editModalShow" :show-close = 'false'>
 				<el-form :model="editForm" :rules="rules">
 					<el-form-item label="名称" label-width="60px" prop="name">
 						<el-input v-model="editForm.name" autocomplete="off"></el-input>
