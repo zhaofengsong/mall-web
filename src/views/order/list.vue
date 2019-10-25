@@ -51,10 +51,11 @@
 			async loadList() {
 				let { status, msg, data } = await AdminOrder.list({ status: 0 });
 				if (status) {
+					for (let i = 0; i < data.length; i++) {
+						let date = new Date(data[i].create_time);
+						data[i].create_time = date.toLocaleString();
+					}
 					this.order = data;
-					let date = new Date(data[0].create_time);
-					console.log(data);
-					// console.log(this.order[0].goodsList)
 				}
 			},
 		},

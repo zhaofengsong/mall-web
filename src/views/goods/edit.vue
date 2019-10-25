@@ -218,7 +218,7 @@
 			},
 			// 富文本编译器
 			change(val) {
-				this.form.detail = val
+				this.form.detail = val;
 			},
 			// 主图
 			handleRemove(file, fileList) {

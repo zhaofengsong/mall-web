@@ -164,7 +164,6 @@
 				let { status, data } = await AdminRole.config({ id })
 				if (status) {
 					this.roleData = data;
-					console.log(data);
 				}
 			}
 		},

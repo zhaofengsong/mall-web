@@ -65,6 +65,7 @@
 					<el-button type="primary" @click="edit">编 辑</el-button>
 				</div>
 			</el-dialog>
+			
 		</el-card>
 	</div>
 </template>
@@ -228,7 +229,6 @@
 
 			},
 		},
-
 	}
 </script>
 
