@@ -59,8 +59,11 @@
 						let { status, msg, data } = await AdminUser.login(formData);
 						if (status) {
 							sessionStorage.token = data.token;
+<<<<<<< HEAD
 							// 存取uid
 							sessionStorage.id = data.id;
+=======
+>>>>>>> 15339f760fcb3282f67b06f08266cb83f30e0702
 							this.$message({
 								showClose: true,
 								message: '登录成功!',
