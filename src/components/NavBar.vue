@@ -2,7 +2,7 @@
 	<div class="NavBar clearfix">
 		<img style="height: 35px;margin: 5px 0 0 10px; float: left;" src="../assets/ia_100000001.png" alt="">
 		<p style="font-size: 15px; color: black; margin-left: 10px;float: left;">华为商城管理系统</p>
-<<<<<<< HEAD
+
 		<i class="el-icon-s-fold" @click="collapseMenu" style="color: #000000;margin-top: 18px;margin-left: 10px;"></i>
 		<el-dropdown style="float: right;padding: 10px 20px;cursor: pointer;">
 			<span>
@@ -15,13 +15,11 @@
 				<el-dropdown-item>注销</el-dropdown-item>
 			</el-dropdown-menu>
 		</el-dropdown>
-=======
->>>>>>> 15339f760fcb3282f67b06f08266cb83f30e0702
+
 	</div>
 </template>
 
 <script>
-<<<<<<< HEAD
 	import { mapMutations, mapState, mapActions } from 'vuex'
 
 	export default {
@@ -47,8 +45,6 @@
 			})
 		}
 	}
-=======
->>>>>>> 15339f760fcb3282f67b06f08266cb83f30e0702
 </script>
 
 <style scoped="scoped">
@@ -58,17 +54,12 @@
 		color: #FFFFFF;
 		background: whitesmoke;
 	}
-<<<<<<< HEAD
+
 
 	.clearfix:after {
 		content: "";
 		display: table;
 		clear: both;
-=======
-	.clearfix:after{
-	    content: ""; 
-	    display: table;
-	    clear: both;      
->>>>>>> 15339f760fcb3282f67b06f08266cb83f30e0702
+
 	}
 </style>
