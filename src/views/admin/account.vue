@@ -11,14 +11,12 @@
 				<el-form-item label="姓名" prop="fullname">
 					<el-input v-model="form.fullname"></el-input>
 				</el-form-item>
-
 				<el-form-item label="性别" prop="sex">
 					<el-radio-group v-model="form.sex">
 						<el-radio label="男"></el-radio>
 						<el-radio label="女"></el-radio>
 					</el-radio-group>
 				</el-form-item>
-
 				<el-form-item label="手机" prop="tel">
 					<el-input v-model="form.tel"></el-input>
 				</el-form-item>
@@ -46,11 +44,8 @@
 
 <script>
 	import { AdminUser, AdminRole, AdminImage } from '@/api/index.js'
-
 	import { createNamespacedHelpers } from 'vuex'
 	const { mapState, mapActions } = createNamespacedHelpers('User')
-
-
 
 	export default {
 		data() {
@@ -61,7 +56,6 @@
 				form: {},
 				role: [],
 				rules: {
-
 					username: [
 						{ required: true, message: '请输入账户', trigger: 'blur' },
 					],
