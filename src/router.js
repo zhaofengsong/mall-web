@@ -91,6 +91,18 @@ let router = new Router({
 				},
 			],
 		},
+		{
+			path: '/cart/',
+			name: 'Cart',
+			component: () => import("@/components/Layout.vue"),
+			children: [{
+					path: 'list',
+					name: 'CartList',
+					component: () => import("./views/cart.vue"),
+				},
+			],
+			
+		},
 
 	]
 })

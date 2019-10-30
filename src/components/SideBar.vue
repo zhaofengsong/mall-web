@@ -90,10 +90,6 @@
 
 
 <style scoped="scoped">
-	.SideBar {
-		min-height: calc(100vh - 50px);
-	}
-
 	.el-menu:not(.el-menu--collapse) {
 		width: 199px;
 	}

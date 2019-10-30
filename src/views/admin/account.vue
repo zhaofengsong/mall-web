@@ -77,8 +77,11 @@
 				}
 			}
 		},
+		computed: {
+			...mapState(['userInfo'])
+		},
 		methods: {
-
+			
 			// 在User模块中查找
 			...mapActions(['loadInfo']),
 
@@ -134,9 +137,8 @@
 		},
 		created() {
 			this.loadRole();
-			this.loadInfo().then(user => {
-				this.form = { ...user };
-			});
+			// 去除userInfo的响应式,只使用一次ajax
+			this.form = { ...this.userInfo };
 		},
 
 	}
